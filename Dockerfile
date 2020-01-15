@@ -1,4 +1,4 @@
-FROM node:10-alpine3.11
+FROM node:10
 
 LABEL maintainer="techknowlogick <techknowlogick@gitea.io>"
 LABEL org.label-schema.version=latest
