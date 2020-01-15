@@ -1,12 +1,12 @@
-FROM node:alpine
+FROM node:10-alpine3.11
 
-LABEL maintainer="Luca Perret <perret.luca@gmail.com>"
+LABEL maintainer="techknowlogick <techknowlogick@gitea.io>"
 LABEL org.label-schema.version=latest
-LABEL org.label-schema.vcs-url="https://github.com/lucaperret/drone-netlify"
+LABEL org.label-schema.vcs-url="https://github.com/techknowlogick/drone-netlify"
 LABEL org.label-schema.name="drone-netlify"
 LABEL org.label-schema.description="Deploying to netlify with Drone CI"
-LABEL org.label-schema.vendor="Luca Perret"
-LABEL org.label-schema.schema-version="1.0"
+LABEL org.label-schema.vendor="techknowlogick"
+LABEL org.label-schema.schema-version="2.0"
 
 RUN npm install -g netlify-cli
 
