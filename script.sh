@@ -52,7 +52,7 @@ fi
 if [ -n "$PLUGIN_SITE_NAME" ] || [ -n "$PLUGIN_DOMAIN" ]
 then
     echo "> Updating your Netlify site…" &&
-    netlify $NETLIFY_SITE deploy $NETLIFY_UPDATE_OPTIONS;
+    netlify $NETLIFY_SITE update $NETLIFY_UPDATE_OPTIONS;
 fi
 
 rc=$?;
