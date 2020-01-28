@@ -31,9 +31,9 @@ fi
 
 if [ -n "$PLUGIN_SITE_ID" ] && [ -n "$PLUGIN_TOKEN" ]
 then
-    NETLIFY_SITE="-t $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
+    NETLIFY_SITE="-a $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
     echo "> Deploying on Netlify…" &&
-    netlify $NETLIFY_SITE deploy $NETLIFY_DEPLOY_OPTIONS;
+    netlify deploy $NETLIFY_SITE $NETLIFY_DEPLOY_OPTIONS;
 else
     echo "> Error! site_id and token are required"
     exit 1
@@ -52,7 +52,7 @@ fi
 if [ -n "$PLUGIN_SITE_NAME" ] || [ -n "$PLUGIN_DOMAIN" ]
 then
     echo "> Updating your Netlify site…" &&
-    netlify $NETLIFY_SITE update $NETLIFY_UPDATE_OPTIONS;
+    netlify $NETLIFY_SITE deploy $NETLIFY_UPDATE_OPTIONS;
 fi
 
 rc=$?;
