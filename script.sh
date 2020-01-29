@@ -31,7 +31,7 @@ fi
 
 if [ -n "$PLUGIN_SITE_ID" ] && [ -n "$PLUGIN_TOKEN" ]
 then
-    NETLIFY_SITE="-a $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
+    NETLIFY_SITE="--prod -a $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
     echo "> Deploying on Netlify…" &&
     netlify deploy $NETLIFY_SITE $NETLIFY_DEPLOY_OPTIONS;
 else
