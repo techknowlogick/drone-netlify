@@ -31,9 +31,9 @@ fi
 
 if [ -n "$PLUGIN_SITE_ID" ] && [ -n "$PLUGIN_TOKEN" ]
 then
-    NETLIFY_SITE="-t $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
+    NETLIFY_SITE="-a $PLUGIN_TOKEN -s $PLUGIN_SITE_ID"
     echo "> Deploying on Netlify…" &&
-    netlify $NETLIFY_SITE deploy $NETLIFY_DEPLOY_OPTIONS;
+    netlify deploy $NETLIFY_SITE $NETLIFY_DEPLOY_OPTIONS;
 else
     echo "> Error! site_id and token are required"
     exit 1
