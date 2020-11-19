@@ -56,7 +56,7 @@ then
 fi
 
 rc=$?;
-if [[ $rc != 0 ]];
+if [[ $rc != 0 ]]
 then 
     echo "> non-zero exit code $rc" &&
     exit $rc
