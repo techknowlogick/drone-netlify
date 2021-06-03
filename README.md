@@ -4,9 +4,9 @@
 
 > Deploying to [Netlify](https://netlify.com) with [Drone](https://drone.io) CI.
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/lucap/drone-netlify.svg)](https://hub.docker.com/r/lucap/drone-netlify/)
-[![Image](https://images.microbadger.com/badges/image/lucap/drone-netlify.svg)](https://microbadger.com/images/lucap/drone-netlify "Get your own image badge on microbadger.com")
-[![GitHub release](https://img.shields.io/github/release/lucaperret/drone-netlify.svg)](https://github.com/lucaperret/drone-netlify/releases/latest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/techknowlogick/drone-netlify.svg)](https://hub.docker.com/r/techknowlogick/drone-netlify/)
+[![Image](https://images.microbadger.com/badges/image/techknowlogick/drone-netlify.svg)](https://microbadger.com/images/techknowlogick/drone-netlify "Get your own image badge on microbadger.com")
+[![GitHub release](https://img.shields.io/github/release/techknowlogick/drone-netlify.svg)](https://github.com/techknowlogick/drone-netlify/releases/latest)
 
 Use case examples:
 
@@ -38,7 +38,7 @@ docker run --rm \
 ```yaml
 pipeline:
   netlify:
-    image: lucap/drone-netlify
+    image: techknowlogick/drone-netlify
     token: xxxxx
     site_id: xxxxxxx-xxxx-xxx-xxxxxxxx
     site_name: netlify-subdomain
