@@ -5,8 +5,6 @@
 > Deploying to [Netlify](https://netlify.com) with [Drone](https://drone.io) CI.
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/techknowlogick/drone-netlify.svg)](https://hub.docker.com/r/techknowlogick/drone-netlify/)
-[![Image](https://images.microbadger.com/badges/image/techknowlogick/drone-netlify.svg)](https://microbadger.com/images/techknowlogick/drone-netlify "Get your own image badge on microbadger.com")
-[![GitHub release](https://img.shields.io/github/release/techknowlogick/drone-netlify.svg)](https://github.com/techknowlogick/drone-netlify/releases/latest)
 
 Use case examples:
 
