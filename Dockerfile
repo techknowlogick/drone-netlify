@@ -1,4 +1,4 @@
-FROM node:14-slim
+FROM node:16-slim
 
 LABEL maintainer="techknowlogick <techknowlogick@gitea.io>"
 LABEL org.label-schema.description="Deploying to netlify with Drone CI"
